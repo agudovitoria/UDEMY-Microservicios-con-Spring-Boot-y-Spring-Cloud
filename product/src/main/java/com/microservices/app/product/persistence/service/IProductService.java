@@ -5,6 +5,6 @@ import java.util.List;
 import java.util.UUID;
 
 public interface IProductService {
-    public List<Product> FindAll();
-    public Product FindById(UUID id);
+    List<Product> findAll();
+    Product findById(UUID id);
 }

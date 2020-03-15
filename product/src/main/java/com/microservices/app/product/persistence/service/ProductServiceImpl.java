@@ -18,13 +18,13 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     @Transactional
-    public List<Product> FindAll() {
+    public List<Product> findAll() {
         return (List<Product>) repository.findAll();
     }
 
     @Override
     @Transactional
-    public Product FindById(UUID id) {
+    public Product findById(UUID id) {
         return repository.findById(id).orElse(null);
     }
 }

@@ -21,11 +21,11 @@ public class ProductController {
 
     @GetMapping()
     public List<Product> getAll() {
-        return service.FindAll();
+        return service.findAll();
     }
 
     @GetMapping("{id}")
     public Product getById(@PathVariable UUID id) {
-        return service.FindById(id);
+        return service.findById(id);
     }
 }

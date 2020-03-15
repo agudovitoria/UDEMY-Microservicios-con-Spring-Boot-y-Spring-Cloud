@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
-@Service
+@Service("feignProductClient")
 @Primary
 public class ItemServiceRestImpl implements IItemService {
 

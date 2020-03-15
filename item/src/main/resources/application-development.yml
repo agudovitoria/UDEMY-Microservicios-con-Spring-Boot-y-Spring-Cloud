@@ -5,3 +5,12 @@ spring:
 logging:
   level:
     web: info
+
+ribbon:
+  eureka:
+    enabled: false
+
+product-service:
+  ribbon:
+    listOfServers: localhost:8001, localhost:9001
+

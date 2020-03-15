@@ -1,4 +1,4 @@
-package com.microservices.app.product.persistence.service;
+package com.microservices.app.product.service;
 
 import com.microservices.app.product.persistence.entity.Product;
 import java.util.List;

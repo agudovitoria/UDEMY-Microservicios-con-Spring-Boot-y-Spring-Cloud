@@ -6,3 +6,8 @@ spring:
     name: item-service
   devtools:
     add-properties: false
+
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false

@@ -4,13 +4,9 @@ spring:
 
 logging:
   level:
-    web: info
+    web: trace
 
-ribbon:
-  eureka:
-    enabled: false
-
-product-service:
-  ribbon:
-    listOfServers: localhost:8001, localhost:9001
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

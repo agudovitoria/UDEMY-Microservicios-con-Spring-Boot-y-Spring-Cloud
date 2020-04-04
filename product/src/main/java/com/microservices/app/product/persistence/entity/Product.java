@@ -1,5 +1,6 @@
 package com.microservices.app.product.persistence.entity;
 
+import com.microservices.app.product.persistence.constant.IdGeneration;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
@@ -19,8 +20,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Data
 public class Product implements Serializable {
     @Id
-    @GeneratedValue(generator = "uuid4")
-    @GenericGenerator(name = "uuid4", strategy = "org.hibernate.id.UUIDGenerator")
+    @GeneratedValue(generator = IdGeneration.GENERATOR)
+    @GenericGenerator(name = IdGeneration.NAME, strategy = IdGeneration.STRATEGY)
     private UUID id;
 
     @Column

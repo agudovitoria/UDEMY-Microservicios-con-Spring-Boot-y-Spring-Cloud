@@ -6,10 +6,8 @@ import java.util.UUID;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@FeignClient(name="product-service", url="localhost:8001")
-@RequestMapping("products")
+@FeignClient(name="product-service", url="localhost:8080/api/v1/products/")
 public interface IProductRestClient {
     @GetMapping()
     List<Product> findAll();

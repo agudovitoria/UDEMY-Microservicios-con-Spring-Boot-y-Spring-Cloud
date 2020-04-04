@@ -6,3 +6,11 @@ spring:
     name: item-service
   devtools:
     add-properties: false
+
+hystrix.command.default.execution.isolation.thread.timeoutIn‌Milliseconds: ${SERVICE_TIMEOUT:10000}
+
+ribbon:
+  eureka:
+    enabled: true
+  ConnectTimeout: 8000
+  ReadTimeout: 10000

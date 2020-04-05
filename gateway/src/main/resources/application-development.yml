@@ -1,7 +1,8 @@
 logging:
   level:
-    org.springframework.cloud.gateway: DEBUG
+    com.microservices: DEBUG
+    org.springframework.cloud.gateway: ERROR
     org.springframework.http.server.reactive: ERROR
     org.springframework.web.reactive: ERROR
     reactor.ipc.netty: ERROR
-    reactor.netty.http.client.HttpClientConnect: DEBUG
+    reactor.netty.http.client.HttpClientConnect: ERROR

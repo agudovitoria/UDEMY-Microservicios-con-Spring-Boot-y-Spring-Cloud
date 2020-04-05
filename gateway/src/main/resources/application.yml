@@ -29,6 +29,9 @@ spring:
             - Path=/api/v1/items/**
           filters:
             - StripPrefix=3
+            - CorrelationId
+            - StartedTime
+            - Logging
 
         - id: product-service
           uri: http://localhost:8001
@@ -36,3 +39,6 @@ spring:
             - Path=/api/v1/products/**
           filters:
             - StripPrefix=3
+            - CorrelationId
+            - StartedTime
+            - Logging
